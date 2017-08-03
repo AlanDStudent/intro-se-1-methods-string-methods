@@ -31,6 +31,8 @@ When you print something to the console, it's gone. You can't use it unless you 
 
 One of the best ways to use `puts` is to check and see whether what you think is happening is really happening. If it isn't there, then you can narrow down what part of your program has broken down.
 
+Consider this example of a method called "double", which takes an integer in and returns double that integer.
+
 ```ruby
 def double(some_number)
     puts "Currently attempting to double the number #{some_number}"
@@ -41,7 +43,7 @@ end
 
 If you run that code without calling the method, nothing at all will print out.
 
-Instead, you'd need to also test it out with a specific number:
+Instead, you'd need to also test it out with a specific number by *calling* the method:
 
 ```ruby
 def double(some_number)
@@ -55,7 +57,7 @@ double(7)
 
 If you run that code, you'll probably see code that confirms that it's running, but you won't see the actual answer, which is 14.
 
-To see *that* you'd need to call the method this way:
+To see *that* you'd need to puts whatever the return value is for the method as it is called:
 
 ```ruby
 puts double(7) #this will print the return value of the method we just wrote.
@@ -81,4 +83,4 @@ age = gets.chomp
 puts "Wow!, you're halfway to #{double(age)}!"
 ```
 
-Remember: by coding return values into our methods, you won't *see* the return if you only call the method. That means that if you write a method called "my_cool_method" that returns a string, then you'll need to explicitly tell it to "puts my_cool_method" if you also want that string printed out. 
+Remember: by coding return values into our methods, you won't *see* the return if you only call the method. That means that if you write a method called "my_cool_method" that returns a string, then you'll need to explicitly tell it to "puts my_cool_method" if you also want that string printed out.
