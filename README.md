@@ -60,7 +60,7 @@ If you run that code, you'll probably see code that confirms that it's running, 
 To see *that* you'd need to puts whatever the return value is for the method as it is called:
 
 ```ruby
-puts double(7) #this will print the return value of the method we just wrote.
+puts double(7) # this will PRINT OUT the return value of the method we just wrote.
 ```
 
 This will print out TWO things:
